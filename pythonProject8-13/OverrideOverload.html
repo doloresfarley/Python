@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Overloading vs Overriding</title>
+</head>
+<body>
+    <h1>Operator Overloading vs Operator Overriding</h1>
+    <p>
+        In programming, <strong>operator overloading</strong> is used instead of
+        <strong>operator overriding</strong> because when you overload an operator, you are
+        essentially defining a new behavior for that operator specifically for a user-defined type,
+        while still keeping the same operator symbol. Overriding would imply changing the behavior
+        of an existing operator for a derived class in an inheritance hierarchy, which is not the
+        case with operator overloading; you are essentially creating a new, distinct implementation
+        for the operator based on the type of operands involved.
+    </p>
+    <h2>Key Points to Remember:</h2>
+    <h3>Overloading:</h3>
+    <ul>
+        <li>
+            Multiple definitions for the same operator, each with different parameter types,
+            allowing the operator to work with different data types.
+        </li>
+    </ul>
+    <h3>Overriding:</h3>
+    <ul>
+        <li>
+            Changing the implementation of an inherited method in a derived class, where the method
+            signature remains the same.
+        </li>
+    </ul>
+    <h2>Example:</h2>
+    <p>
+        Imagine creating a class called <code>Complex</code> to represent complex numbers. You can
+        overload the "+" operator to define how to add two complex numbers, essentially giving the
+        "+" operator a new meaning for your <code>Complex</code> class. However, you are not
+        overriding the existing "+" operator for other data types.
+    </p>
+</body>
+</html>
